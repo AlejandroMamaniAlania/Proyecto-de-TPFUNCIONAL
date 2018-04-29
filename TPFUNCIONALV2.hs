@@ -64,7 +64,7 @@ esListaVacia lista=(length lista) == 0
 
 divide micro
   |   (==0) (acumuladorB micro)=sumarUno(micro{etiqueta="DIVISION BY ZERO"})
-  |	otherwise=sumarUno(micro{acumuladorA=div (acumuladorA micro) (acumuladorB micro)})
+  |	otherwise=sumarUno(micro{acumuladorA=div (acumuladorA micro) (acumuladorB micro),acumuladorB=0})
 
 
 
